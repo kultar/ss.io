@@ -1,4 +1,11 @@
 
+## packages
+
+$gen_packs = ['build-essential','gcj-jdk']
+package { $gen_packs:
+  ensure => latest,
+}
+
 ## webserver w/ ssl
 class { 'nginx': }
 
